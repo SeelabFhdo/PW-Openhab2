@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="restSAP"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="restSAP1">
+        <label>restSAP Binding Thing</label>
+        <description>Sample thing for restSAP Binding</description>
+
+        <channels>
+            <channel id="Send" typeId="Send"/>
+            <channel id="Volume" typeId="Volume"/>
+            <channel id="Channel" typeId="Channel"/>
+            <channel id="Temperature" typeId="Temperature"/>
+        </channels>
+    </thing-type>
+
+    <!-- Sample Channel Type -->
+    <channel-type id="Send">
+        <item-type>Switch</item-type>
+        <label>restSAP Binding Channel</label>
+        <description>Sample channel for restSAP Binding</description>
+    </channel-type>
+    <channel-type id="Volume">
+        <item-type>Switch</item-type>
+        <label>restSAP Binding Channel</label>
+        <description>Sample channel for restSAP Binding</description>
+    </channel-type>
+    <channel-type id="Channel">
+        <item-type>Switch</item-type>
+        <label>restSAP Binding Channel</label>
+        <description>Sample channel for restSAP Binding</description>
+    </channel-type>
+    <channel-type id="Temperature">
+        <item-type>Switch</item-type>
+        <label>restSAP Binding Channel</label>
+        <description>Sample channel for restSAP Binding</description>
+    </channel-type>
+
+</thing:thing-descriptions>

@@ -1,2 +1,4 @@
-yahooweather:weather:berlin [ location="638242" ]
+yahooweather:weather:berlin [ location="645458" ]
 astro:sun:home  [ geolocation="52.5200066,13.4049540", interval=60 ]
+samsungtv:SamsungUEH:mytv [  host="192.168.42.99", port=55000 ]
+restSAP:restSAP:myrest[]

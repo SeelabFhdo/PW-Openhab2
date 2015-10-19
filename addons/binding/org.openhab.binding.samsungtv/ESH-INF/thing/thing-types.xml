@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="samsungtv"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="SamsungUEH">
+        <label>SamsungTv Binding Thing</label>
+        <description>Sample thing for SamsungTv Binding</description>
+
+        <channels>
+            <channel id="Volume" typeId="Volume"/>
+            <channel id="Channel" typeId="Channel"/>
+            <channel id="Connect" typeId="Connect"/>
+            <channel id="Number" typeId="Number"/>
+            <channel id="Mute" typeId="Mute"/>
+        </channels>
+        
+        	<!-- Parameters -->
+		<config-description>
+			<parameter name="host" type="text">
+        		<label>Hostname</label>
+        		<description>IP Samsung TV</description>
+        		<default>localhost</default>
+        		<required>true</required>
+        	</parameter>
+        	
+        	<parameter name="port" type="integer">
+        		<label>Port</label>
+        		<description>Port of the Samsung TV</description>
+        		<default>55000</default>
+        		<required>true</required>
+        	</parameter>
+        	<parameter name="serial" type="text">
+                <label>Serial Number (optional)</label>
+                <description>SN of the Samsung TV</description>
+                <default></default>
+                <required>false</required>
+            </parameter>
+		</config-description>
+        
+    </thing-type>
+
+    <!-- Samsung TV Channel-Types -->
+    <channel-type id="Volume">
+        <item-type>Rollershutter</item-type>
+        <label>Volume</label>
+        <description>Volume of your Samsung TV</description>
+    </channel-type>
+    
+     <channel-type id="Channel">
+        <item-type>Rollershutter</item-type>
+        <label>Channel up/down</label>
+        <description>Switching the channel up/down</description>
+    </channel-type>
+    
+    <channel-type id="Connect">
+        <item-type>Switch</item-type>
+        <label>Connection to the TV</label>
+        <description>Connection status of your Samsung TV</description>
+    </channel-type>
+    
+    <channel-type id="Number">
+        <item-type>Number</item-type>
+        <label>Channel Selection</label>
+        <description>Select directly a channel</description>
+    </channel-type>
+    
+    <channel-type id="Mute">
+        <item-type>Switch</item-type>
+        <label>Mute on/off</label>
+        <description>Mute the Samsung TV</description>
+    </channel-type>
+</thing:thing-descriptions>

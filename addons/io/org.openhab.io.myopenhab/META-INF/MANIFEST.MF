@@ -39,7 +39,8 @@ Import-Package: org.apache.commons.io,
  org.osgi.service.cm,
  org.osgi.service.event,
  org.slf4j
-Export-Package: org.openhab.io.myopenhab
+Export-Package: org.json,
+ org.openhab.io.myopenhab
 Bundle-ClassPath: .,
  lib/json-20140107.jar,
  lib/engine.io-client-0.6.2-SNAPSHOT.jar,
